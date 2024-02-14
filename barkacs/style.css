@@ -1,26 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     user-select: none;
 }
 body{
     background: #e9e9e9 url('assets/background.jpg') center/cover no-repeat;
     height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
 }
 nav{
     background: hsl(226, 83%, 30%);
 }
-.container{
-    background: rgba(255, 255, 255, 0.8);
+h1, h2{
+    color: hsl(210, 11%, 15%);
 }
 h1{
-    color: hsl(210, 11%, 15%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: "Noto Serif", serif;;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+}
+.container-fluid{
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 1750px;
+    height: 100vh;
+}
+.carousel-inner {
+    max-height: 30rem;
+    overflow: hidden;
+}
+.carousel-item img {
+    filter: blur(0.3rem);
+}
+.carousel-button {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* TODO: Megcsinálni, hogy ne ilyen legyen az elrendezése */
+    z-index: 1;
+}
+@media screen and (max-width: 768px) {
+    .carousel-button {
+        visibility: hidden;
+    }
+}
+.carousel-button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.table{
+    font-size: 1.2rem;
 }
 footer{
+    display: flex;
+    position: sticky;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
     background: hsl(226, 83%, 30%);
-    font-family: "Noto Sans Lepcha", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    height: 5rem;
 }
-.footerParagraph{
-    font-weight: bold;
+footer p{
+    padding: 5rem;
 }
