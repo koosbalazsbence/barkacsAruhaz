@@ -111,3 +111,43 @@ footer ul {
         flex-wrap: wrap;
     }
 }
+
+/* <nav>
+        <img src="assets/img/logo.svg" alt="Logo" class="MainLogo">
+        <ul>
+            <li><a href="#">Üzletek</a></li>
+            <li><a href="#">Hangszerek</a></li>
+            <li><a href="#">Tanfolyamok</a></li>
+        </ul>
+        <img src="assets/img/Facebook-logo-red.png" alt="Logo" class="logoFacebook">
+    </nav> */
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0;
+}
+ul > li a{
+    color: hsl(0, 100%, 30%);
+}
+li a{
+    font-size: 1.1rem;
+    margin: 1rem;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
